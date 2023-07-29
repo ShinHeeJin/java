@@ -1,11 +1,10 @@
 package dev.heejin;
 
-import dev.heejin.ch02.Scanner;
-import dev.heejin.ch02.Variable;
+import dev.heejin.ch02.TypeConvert;
 
 public class Main {
 
     public static void main(String[] args) {
-        new Scanner().main();
+        TypeConvert.main();
     }
 }
