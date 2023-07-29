@@ -1,10 +1,10 @@
 package dev.heejin;
 
-import dev.heejin.ch04.NameLoop;
+import dev.heejin.ch05.Array;
 
 public class Main {
 
     public static void main(String[] args) {
-        NameLoop.main();
+        Array.main();
     }
 }
