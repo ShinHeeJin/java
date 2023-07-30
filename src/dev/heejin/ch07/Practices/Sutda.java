@@ -33,6 +33,16 @@ class SutdaDeck {
         }
         System.out.println("cards = " + Arrays.toString(cards));
     }
+
+    public SutdaCard pick(int index){
+        if ( 0 <= index && index <= CARD_NUM) return null;
+        return cards[index];
+    }
+
+    public SutdaCard pick(){
+        int index = (int) (Math.random() * CARD_NUM);
+        return cards[index];
+    }
 }
 
 class SutdaCard {
@@ -62,5 +72,9 @@ public class Sutda {
         System.out.println();
         deck.shuffle1();
         deck.shuffle2();
+
+        System.out.println(deck.pick());
+        System.out.println(deck.pick(0));
+
     }
 }
