@@ -1,10 +1,10 @@
 package dev.heejin;
 
-import dev.heejin.ch06.Practice;
+import dev.heejin.ch07.UpAndDownCasting;
 
 public class Main {
 
     public static void main(String[] args) {
-        Practice.main();
+        new UpAndDownCasting().main();
     }
 }
