@@ -1,10 +1,10 @@
 package dev.heejin;
 
-import dev.heejin.ch05.Array;
+import dev.heejin.ch05.LottoNumber;
 
 public class Main {
 
     public static void main(String[] args) {
-        Array.main();
+        LottoNumber.main();
     }
 }
