@@ -4,6 +4,7 @@ class MyTv{
     private boolean isPowerOn;
     private int channel;
     private int volume;
+    private int prevChannel;
 
     final int MAX_VOLUME = 100;
     final int MIN_VOLUME = 0;
@@ -16,7 +17,12 @@ class MyTv{
 
     public void setChannel(int channel) {
         if (!(MIN_CHANNEL <= channel && channel <= MAX_CHANNEL)) return;
+        prevChannel = this.channel;
         this.channel = channel;
+    }
+
+    public void gotoPrevChannel(){
+        setChannel(prevChannel);
     }
 
     public int getVolume() {
@@ -36,5 +42,13 @@ public class MyTvPractice {
         System.out.println("CH : " + myTv.getChannel());
         myTv.setVolume(20);
         System.out.println("VOLUME : " + myTv.getVolume());
+        myTv.setChannel(20);
+        System.out.println("CH : " + myTv.getChannel());
+        myTv.gotoPrevChannel();
+        System.out.println("CH : " + myTv.getChannel());
+        myTv.gotoPrevChannel();
+        System.out.println("CH : " + myTv.getChannel());
+        myTv.gotoPrevChannel();
+        System.out.println("CH : " + myTv.getChannel());
     }
 }
