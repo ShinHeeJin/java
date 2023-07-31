@@ -1,10 +1,10 @@
 package dev.heejin;
 
-import dev.heejin.ch07.Practices.InnerClass03;
+import dev.heejin.ch08.MethodThrowException;
 
 public class Main {
 
     public static void main(String[] args) {
-        new InnerClass03().main();
+        new MethodThrowException().main();
     }
 }
