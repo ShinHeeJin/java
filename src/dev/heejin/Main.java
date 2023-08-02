@@ -1,10 +1,10 @@
 package dev.heejin;
 
-import dev.heejin.ch09.EqualsCheck;
+import dev.heejin.ch09.StringJoinerCheck;
 
 public class Main {
 
     public static void main(String[] args) {
-        new EqualsCheck().main();
+        new StringJoinerCheck().main();
     }
 }
